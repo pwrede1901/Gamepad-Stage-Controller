@@ -2,6 +2,8 @@
 
 This project is aiming to integrate a open-loop gamepad control to our stage system using Python. The stage system from IAI we are using uses a MODBUS ASCI communication protocol. Consequently the code reflects these characteristics. Hence, if another stage system or communication protol is used changes to the commands and the way they are assembled and handled might become necessary. 
 
+Since our system needs some time for communication and does not allow continoues input the present code uses buttons of the controller to trigger certain function such as homing or movement by a given step size. This is therefore not an open-loop control. Also we do not get positional feedback from the code, as we will use the code to move a real-time imaging probe. Hence, the acquired image will serve us as position control. 
+
 # System Information
 - Stage System: IAI Stage system
 - Controller: PS4 DualShock Controller
