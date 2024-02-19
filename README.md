@@ -4,6 +4,8 @@ This project is aiming to integrate a gamepad control to our stage system using 
 
 Since our system needs some time for communication and does not allow continoues input the present code uses buttons of the controller to trigger certain function such as homing or movement by a given step size. This is therefore not an open-loop control. Also we do not get positional feedback from the code, as we will use the code to move a real-time imaging probe. Hence, the acquired image will serve us as position control. 
 
+The documenttation for our stage system as well as a map of our controller buttons can be found in the "*Helpful Documents*" folder. 
+
 # System Information
 - Stage System: IAI Stage system
 - Controller: PS4 DualShock Controller
@@ -47,6 +49,8 @@ Since our system needs some time for communication and does not allow continoues
 - This script initializes the StageController and gamepad, then enters a loop to continuously poll for gamepad inputs.
 - For each stage (X, Y, Z, Phi), there are buttons designated for homing and for increasing/decreasing the stage position. The script checks if these buttons are pressed and calls the corresponding functions from the stages module with appropriate parameters.
 - The distances (distance_x, distance_y, distance_z, distance_phi) are adjusted based on the button presses to increase or decrease the position. The step_size variable determines how much the position changes with each button
+
+
 
 
 # Help_Codes
