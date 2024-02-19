@@ -50,7 +50,7 @@ The documenttation for our stage system as well as a map of our controller butto
 - For each stage (X, Y, Z, Phi), there are buttons designated for homing and for increasing/decreasing the stage position. The script checks if these buttons are pressed and calls the corresponding functions from the stages module with appropriate parameters.
 - The distances (distance_x, distance_y, distance_z, distance_phi) are adjusted based on the button presses to increase or decrease the position. The step_size variable determines how much the position changes with each button
 
-Stage Control Python.py & Gamepad.py
+Stage_Control_Python.ipynb & GamePad_Control.ipynb
 
 - Stage Control Python.py is just a one to one translation of our previous matlab code to control the stage without gamepad. It served as basis for the gamepad integration and is therefore only kept here as starting point for new codes and as fallback version of the code
 - Gamepad.py is the non-object oriented version of the code, it might be deleted in a new release
